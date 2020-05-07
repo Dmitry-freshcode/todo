@@ -11,12 +11,18 @@ input[name="task"]{
     border-width: 4px;
 }
 
-#createTaskButton{
+.inpuText{
+    padding: 10px;
+    text-align: center;
+}
+
+#createTaskButton, #deleteTaskButton{
     display: inline-block;
     background-color: darkblue;
     color: white;
     box-sizing: border-box;
-    padding: 10px 20px;
+    border-radius: 5px;
+    padding: 7px 20px;
     cursor: pointer;
 }
 
@@ -31,3 +37,28 @@ input[name="task"]{
 #createTaskButton:active{
     box-shadow: inset 0 0 8px rgba(0,0,0,0.5);
 }
+
+
+#tasksList > li{
+    display: flex;
+    box-sizing: border-box;
+    width: 550px;
+    background-color: #b3d4fc;
+    border-radius: 5px;
+    border: 1px solid #0d8fff;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.deleteButton{
+    color: red;
+    font-weight: bold;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.timeElement{
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
